@@ -1,0 +1,33 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/notebook-dark.png");
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover{
+  letter-spacing: 3px;
+  transition: all 1s;
+}
+p {
+  width: 50em;
+  text-align: inherit;
+}
+
+.formula {
+  width: 25em;
+}
+
+.Ejemplo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/notebook-dark.png");
+}

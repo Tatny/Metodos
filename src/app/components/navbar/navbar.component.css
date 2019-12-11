@@ -1,0 +1,8 @@
+.navbar{
+    background-color: #3F51B5 !important;
+    color: white !important;
+    height: 3em !important;
+    display: flex !important;
+    align-items: center !important;
+    font-family: 'Stint Ultra Expanded', cursive !important;
+}

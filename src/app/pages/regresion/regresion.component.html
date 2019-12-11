@@ -1,0 +1,118 @@
+<mat-card>Regresión Lineal</mat-card>
+<mat-tab-group>
+    <mat-tab label="¿Qué es?">
+
+        <div class="info">
+            <p>
+                Es un método insesgado para la tendencia, es decir, su varianza respecto al valor real es mucho menor en
+                comparación de otros métodos.
+                Al construir un modelo para representar un fenómeno particular, los objetivos son simplicidad y
+                precisión. Por ejemplo, observemos las siguientes gráficas.
+            </p>
+
+            <img class="imagen" src="../../../assets/img/regresion/graficas1.PNG" alt="Graficas de ejemplo">
+
+            <p>
+                Para el primer modelo, cuando se han graficado los puntos observamos que la función que es una recta no
+                pasa por todos ellos,
+                para la segunda gráfica que es una función cuadrática si se tocan todos los puntos.
+                Lo anterior explicado es que se pueden sumar los cuadrados de las diferencias entre los valores reales y
+                los valores dados
+                por el modelo para obtener la suma de los cuadrados de los errores o errores cuadráticos. <br>
+                La diferencia de los cuadrados se puede graficar en forma de una recta y= ax+b creando una relación
+                entre ellos.
+                <br>
+                Esta recta en la recta de regresión lineal.
+            </p>
+
+            <img class="imagen2" src="../../../assets/img/regresion/recta.PNG" alt="recta">
+
+            <p>
+                Para obtener los valores de a y b se usan las siguientes fórmulas: <br>
+            </p>
+
+            <img class="imagen" src="../../../assets/img/regresion/formulas.PNG" alt="">
+
+        </div>
+
+
+    </mat-tab>
+    <mat-tab label="Ejemplo">
+
+        <div class="Ejemplo">
+            <p>
+                Ejemplo:<br>
+                Hallar la recta de regresión (ajuste de curva) para los puntos (-3,0), (-1,1), (0,2) y (2,3). Usando
+                n=4. <br> <br>
+
+                Tabulación:
+                Se tabulan los puntos como se muestra a continuación y se suman: <br>
+                Punto (-3,0)x=3, y=0 xy= (3)*(0) x2=(3)2=9 De la misma manera para todos los puntos.
+
+            </p>
+
+            <img class="imagen" src="../../../assets/img/regresion/tabla.PNG" alt="tabla">
+
+            <p>
+                Se sustituyen los valores en las siguientes formulas para obtener a y b de la ecuación de la recta.
+            </p>
+
+            <img class="imagen" src="../../../assets/img/regresion/formulas_sust.PNG"
+                alt="sustitucion_regresion_lineal">
+
+            <p>
+                Quedando la recta de regresión como
+            </p>
+
+            <img class="ecuacion" src="../../../assets/img/regresion/recta_forma.PNG" alt="ecuacion de la recta">
+
+            <p>
+                Si graficamos los puntos y la recta en un mismo plano queda de la siguiente manera:
+
+            </p>
+            <img src="../../../assets/img/regresion/rectaypuntos.jpg" alt="grafica de la recta de regresion lineal">
+        </div>
+
+    </mat-tab>
+
+    <mat-tab label="Aplicaciones">
+        <div class="info">
+            <p>
+                <br> • Aplicación de la regresión lineal en un problema de pobreza, por la Universidad del Rosario,
+                Colombia. <a href="http://www.unilibre.edu.co/revistainteraccion/volumen12/art4.pdf">Ver aquí</a> 
+                <br> • Aplicación del ajuste de curvas en el área de Machine Learning. Se considera un subcampo del área
+                llamado “Machine Learning Supervisado” <a href="https://medium.com/datos-y-ciencia/machine-learning-supervisado-fundamentos-de-la-regresi%C3%B3n-lineal-bbcb07fe7fd">Ver aquí</a>
+                <br> • Aplicación del ajuste de curvas en el área de tratamiento de aguas. Se usa este método para
+                estudiar
+                la aparición de ciertos componentes químicos durante diferentes etapas de distribución de agua potable
+            </p>
+        </div>
+
+    </mat-tab>
+
+    <mat-tab label="Plantilla">
+
+        <div class="plantilla">
+            <p>
+                Hemos creado una plantilla en excel donde se pueden insertar hasta diez pares de coordenadas
+                generando la ecuacion de la recta e su forma y=ax+b y las gráficas correspondientes.
+            </p>
+
+            <a href="../../../assets/files/regresion_lineal.xlsx">Descarga aqui</a>
+
+        </div>
+    </mat-tab>
+    <mat-tab label="Bibliografía">
+        <div class="info">
+            <p>
+                <br> EA, B. R. (2018). Estimating linear trends: Simple linear regression versus epoch differences.
+                Obtenido de J Clim.: http://0-search.proquest.com.millenium.itesm.mx/docview/1751976788?accountid=11643.
+                doi: http://0-dx.doi.org.millenium.itesm.mx/10.1175/JCLI-D-15-0032.1.
+                <br>Larson, R., Hostetler, R., & Edwards, B. (2010). Cálculo esencial. CDMX: Cengage Learning.
+
+
+            </p>
+        </div>
+
+    </mat-tab>
+</mat-tab-group>

@@ -1,0 +1,11 @@
+<link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Expanded|Text+Me+One&display=swap" rel="stylesheet">
+<div class="navbar">
+  <button mat-button [routerLink]="['/home']">Inicio</button>
+  <button mat-button [matMenuTriggerFor]="menu">Métodos</button>
+  
+<mat-menu #menu="matMenu">
+  <button mat-menu-item [routerLink]="['/secante']">Secante</button>
+  <button mat-menu-item [routerLink]="['/simpson']">Simpson</button>
+  <button mat-menu-item [routerLink]="['/regresion']">Regresión Lineal</button>
+</mat-menu>
+</div>

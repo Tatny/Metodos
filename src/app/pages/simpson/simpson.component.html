@@ -1,0 +1,185 @@
+<mat-card>Simpson</mat-card>
+<mat-tab-group>
+    <mat-tab label="¿Qué es?">
+
+        <div class="info">
+            <p>
+                La regla de Simpson es un método que calcula una integral definida, mediante una aproximación más
+                precisa del área bajo una curva, ya que se conectan grupos de puntos sucesivos sobre la curva mediante
+                parábolas. Al sumar las áreas bajo las parábolas se obtiene el área aproximada bajo la curva (definición
+                de la integral).
+            </p>
+
+            <img class="imagen" src="../../../assets/img/simpson/simspon.jpg" alt="">
+
+            <p>
+                FÓRMULAS DE SIMPSON: <br>
+                Debemos tomar en cuenta que para poder hacer el desarrollo de la ecuación de una parábola se necesitan
+                tres puntos que son el intervalo de integración de (a, b), y n que nos permite saber cuántos
+                subintervalos encontraremos. Y la fórmula es:
+            </p>
+
+            <img class="ecuacion" src="../../../assets/img/simpson/ecuacion.PNG" alt="">
+
+            <p>
+                NOTA: Debemos recordar que n tiene que ser par.
+
+            </p>
+
+            <p>
+                Fórmula general de Simpson:
+            </p>
+            <img class="imagenfg" src="../../../assets/img/simpson/formula_general.PNG" alt="">
+
+        </div>
+
+    </mat-tab>
+    <mat-tab label="Ejemplo">
+        <div class="Ejemplo">
+            <p>
+                Resolver la siguiente integral.
+            </p>
+
+            <img class="ecuacion" src="../../../assets/img/simpson/ejemplo.PNG" alt="ejemplo_integral">
+
+
+            <p>Paso 1</p>
+
+            <p>
+                El cálculo consiste en definir los límites de integración los cuales serán representadas por:
+                <br> b= límite superior.
+                <br> a = límite inferior.
+                <br> n = determina el número total de subintervalos en el rango (a, b) el cual debe ser par.
+                <br> Tenemos que establecer lo siguiente, cuánto valen: recordemos que nuestros intervalos son de (1 a
+                2)
+                <br> (apuntes-metodos-numericos-integracion-y-diferenciacion)
+                <br> b=2
+                <br> a=1
+                <br> n= (en ocasiones vienen dados los valores y en ocasiones son arbitrarias), le daremos 4.
+            </p>
+
+            <p>
+                Paso 2
+            </p>
+            <p>
+                Realizamos la sustitucion de valores
+            </p>
+
+            <img class="ecuacion" src="../../../assets/img/simpson/sustitucion.PNG" alt="sustitucion">
+
+            <p>
+                Paso 3 <br> Comenzamos haciendo la suma: x<sub>0</sub>=a será 1
+            </p>
+
+            <p>
+                <br> x<sub>0</sub>= 1
+                <br> x<sub>1</sub>= 1+0.25=1.25 se obtiene este resultado porque se sumó el anterior y el resultado de
+                ∆x.
+                <br> x<sub>2</sub>= 1.25+0.25=1.5 se obtiene de sumar el resultado anterior y ∆x.
+                <br> x<sub>3</sub> =1.5+0.25=1.75 se obtiene de sumar el resultado anterior y ∆x
+                <br> x<sub>4</sub> = 1.75+0.25=2 se obtiene de sumar el resultado anterior y ∆x.
+
+            </p>
+
+            <p>
+                Paso 4 Lo que haremos a continuación es sustituir en la función todos los valores de X:
+            </p>
+            <img class="imagen" src="../../../assets/img/simpson/ecuacion4.PNG" alt="">
+            <p>
+                Paso 5 <br>
+                Continuamos con: [f(x<sub>0</sub>)sustituyendo f(1)]
+            </p>
+            <p>
+                En los siguientes f(x) sustituiremos los valores obtenidos por las sumas:
+                <br>+4f(x<sub>1</sub>)sustituyendo +4f (1.25)
+                <br>+2f(x<sub>2</sub>) sustituyendo +2f (1.5)
+                <br>+4f(x<sub>3</sub>) sustituyendo +4f(1.75)
+                <br> +2f(x<sub>4</sub>) sustituyendo +2f (2), como solamente son 4 subintervalos esto queda así: x_4=2.
+            </p>
+
+            <p>
+                Paso 6 <br>
+                Comenzamos a sustituir los valores obtenidos en la función original y resolvemos para obtener los
+                nuevos valores, y lo hacemos de la siguiente manera:
+            </p>
+            <img class="imagen" src="../../../assets/img/simpson/ecuacion6.PNG" alt="">
+            <p>
+                A los siguientes valores los sustituimos y obtenemos resultados de la misma forma:
+                <br>+4f (1.25) sustituimos y resolvemos +4 √(1+1.25<sup>2</sup>) = +4√2.5625 = 6.403124.
+                <br>+2f (1.5) sustituimos y resolvemos +2√(1+1.5<sup>2</sup> ) = +2√3.25 = 3.60555
+                <br> +4f (1.75) sustituimos y resolvemos +4√(1+1.75<sup>2</sup> ) = +4√4.0625 = 8.06225
+                <br> +(2) sustituimos y resolvemos =√(1+2<sup>2</sup> ) = √5= 2.23606.
+
+            </p>
+
+            <p>
+                Al obtener todos los valores, se remplazan en la ecuación y quedaría así:
+            </p>
+            <img class="resultado" src="../../../assets/img/simpson/ecuacion7.PNG" alt="">
+
+            <p>
+                Primero realizamos la sumatoria de los valores dentro del corchete, y posteriormente lo multiplicamos
+                por el valor obtenido de la división, y el resultado es: una aproximación de la integral.
+                <br>≈: 1.810026U<sup>2</sup>
+
+            </p>
+        </div>
+    </mat-tab>
+    <mat-tab label="Aplicaciones">
+
+        <div class="Aplicaciones">
+            <p>El método de Simpson se utiliza para muchas actividades de la vida cotidiana algunos ejemplos son:
+            </p>
+
+            <p>
+                APLICACIÓN DEL MÉTODO DE SIMPSON EN INGENIERÍA:
+                <br>Un topógrafo podría necesitar conocer el área de un campo limitado
+                <br>Un ingeniero en hidráulica tal vez requiera conocer el área de la sección transversal de un río.
+                <br>Un ingeniero en estructuras quizá necesite determinar la fuerza neta ejercida por un viento no
+                uniforme que sopla contra un lado de un rascacielos. <a href="http://www.smie.org.mx/SMIE_Articulos/co/co_12/te_01/ar_03.pdf">Ver aquí</a>
+                
+
+            </p>
+            <p>
+                APLICACIÓN DEL MÉTODO DE SIMPSON EN FÍSICA:
+                En física y mecánica, nos ayuda a calcular áreas, volúmenes, solidos, calculo y trabajo. <a href="http://aplicacionesintegralesjs.blogspot.com/2012/05/regla-de-simpson.html">Ver aquí</a>
+                
+            </p>
+
+            <p>
+                APLICACIÓN DEL MÉTODO DE SIMPSON EN MEDICINA (CARDIOLOGÍA):
+                En medicina actualmente se requieren métodos numéricos para medir, calcular o verificar el daño de un
+                corazón respecto a las áreas afectadas de este. <a href="https://www.youtube.com/watch?v=qUqltvCqX_U">Ver aquí</a>
+                
+            </p>
+
+        </div>
+
+
+    </mat-tab>
+    <mat-tab label="Plantilla">
+        <div class="plantilla info">
+            <p>
+                Hemos creado una plantilla en excel donde puedes resolver las integrales por el método de simpson
+            </p>
+
+            <a href="../../../assets/files/Simpson.xlsx">Descarga Aqui</a>
+        </div>
+    </mat-tab>
+
+    <mat-tab label="Bibliografía">
+        <div class="info">
+            <p>
+                <br> Chapra, S., & Cunale, R. (2007). MÈTODOS NUMÈRICOS PARA INGENIEROS. MaGraw-Hill Interamericana.
+                <br> Aguilar Marquez, A., & Valopai Bravo, f. (2014). MATEMATICAS SIMPLIFICADAS. PEARSON.
+                <br> apuntes-metodos-numericos-integracion-y-diferenciacion. (s.f.).
+                <br> http://anyflip.com/nzlt/gsop/basic/701-750. (s.f.).
+                <br> http://repositorio.uned.ac.cr/multimedias/metodos_numericos_ensenanza/modulo4/descripcion.html.
+                (s.f.).
+                <br> https://matematica.fandom.com/wiki/Integracion_Numerica. (s.f.).
+                <br> Leithold, l. (1987). EL CÀLCULO con geometria analitica. mexico: HARLA
+
+            </p>
+        </div>
+    </mat-tab>
+</mat-tab-group>

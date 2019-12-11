@@ -1,0 +1,15 @@
+.example-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30em;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+  }
+  a:hover{
+    letter-spacing: 3px;
+    transition: all 1s;
+  }

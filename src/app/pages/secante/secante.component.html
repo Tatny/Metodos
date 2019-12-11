@@ -1,0 +1,134 @@
+<mat-card>Secante</mat-card>
+<mat-tab-group>
+    <mat-tab label="¿Qué es?">
+        <div class="info">
+            <p>
+                El método de la secante es un algoritmo de la raíz de investigación que utiliza una serie de raíces
+                de
+                las líneas secantes para aproximar mejor la raíz de una función f.
+            </p>
+
+            <p>
+                El método se basa en obtener la ecuación de la recta que pasa por los puntos (x<sub>n−1</sub>,
+                f(x<sub>n−1</sub>)) y
+                (x<sub>n</sub>, f(x<sub>n</sub>)). A dicha recta se le llama secante por cortar la gráfica de la
+                función.
+            </p>
+
+            <img class="imagen" src="../../../assets/img/secante/grafica.jpg" alt="grafica de la secante">
+
+            <p>
+                nos queda la Formula Final:
+            </p>
+
+            <img class="imagen" src="../../../assets/img/secante/formual_gral.PNG" alt="">
+
+            <p>
+                Donde
+                <br> Xi = Xn
+                <br> Xn-1= Xi1
+            </p>
+
+        </div>
+
+
+    </mat-tab>
+
+
+    <mat-tab label="Ejemplo">
+        <div class="Ejemplo">
+            <p>
+                Encontrar la raíz de la Ecuación:
+            </p>
+
+            <img class="formula" src="../../../assets/img/secante/ejemplo.PNG" alt="">
+
+            <p>
+                Evaluamos los valores iniciales en la ecuación dada
+            </p>
+
+            <img src="../../../assets/img/secante/formulas dadas.PNG" alt="">
+
+            <p>
+                Preparamos los valores obtenidos:
+            </p>
+
+            <img src="../../../assets/img/secante/vlores.PNG" alt="">
+
+            <p>
+                Sustituimos los valores en la formula
+            </p>
+
+            <img src="../../../assets/img/secante/sustitucion.PNG" alt="">
+
+            <p>
+                Así obtenemos el nuevo valor para Xi. Mientras que Xi pasa a ser el nuevo Xi1
+            </p>
+
+            <img src="../../../assets/img/secante/nuevos2.PNG" alt="">
+
+            <p>
+                Luego con los valores nuevos se vuelven a repetir todas las ecuaciones anteriores:
+            </p>
+
+            <img src="../../../assets/img/secante/sustitucion2.PNG" alt="">
+
+            <p>
+                Los nuevos datos son:
+            </p>
+
+            <img src="../../../assets/img/secante/tabla2.PNG" alt="">
+
+            <p>
+                y sustituidos nuevamente en la formula quedan:
+            </p>
+
+            <img src="../../../assets/img/secante/formula 2.PNG" alt="">
+
+            <p>
+                de esta forma sucesivamente hasta que se encuentre a raiz, con ayuda de Excel podemos crear una tabla o
+                plantilla que nos muesre los cálculos. Com la siguienteÑ
+            </p>
+
+            <img src="../../../assets/img/secante/tablaultima.PNG" alt="">
+
+        </div>
+    </mat-tab>
+    <mat-tab label="Aplicaciones">
+        <div class="info">
+            <p>
+                <br>• Se utiliza con el método de Newton para medir y calcular la fuerza, movimiento circular,
+                ubicación, densidad y la velocidad de las Olas. <a
+                    href="http://v-beta.urp.edu.pe/pdf/id/2555/n/application-of-numerical-methods-to-solve-nonlinear-equations-for-sea-wave-modeling"> Ver Aquí</a>
+
+                <br>• Se utiliza para ayudar a sacar medidas de Operadores no diferenciales. <a href="https://www.emis.de/proceedings/Chicho2001/MJrubio-Michel.pdf">Ver Aquí</a>
+                
+                <br> • Se usa en algoritmos de programación. <a href="https://metodosnumericosgera.wordpress.com/2017/03/02/metodo-de-la-secante/">Ver Aquí</a>
+                
+
+            </p>
+
+        </div>
+    </mat-tab>
+
+    <mat-tab label="Plantilla">
+        <div class="info">
+            <p>
+                Hemos preparado una pantilla en excel donde puedes resolver ejercicios por el método de la Secante
+            </p>
+            <a href="../../../assets/files/Secante.xlsx">Descarga Aquí</a>
+        </div>
+    </mat-tab>
+    <mat-tab label="Bibliografía">
+        <div class="info">
+            <p>
+                <br>Universidad Nacional de Ingeniería. (2016). Método de la Secante. 2018, de site. googles Sitio web:
+                https://sites.google.com/site/cm4312014/sis/metodo-de-la-secante
+                <br>CctMexico. (2017). Secante | Raíces | Métodos Numéricos | Básico. 2019, de Youtube Sitio web:
+                https://www.youtube.com/watch?v=YOHtIzPmfzE
+
+            </p>
+        </div>
+    </mat-tab>
+
+</mat-tab-group>

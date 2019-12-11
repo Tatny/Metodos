@@ -1,0 +1,65 @@
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/notebook-dark.png");
+}
+
+.imagen {
+    width: 25em;
+}
+
+.imagen2 {
+    width: 15em;
+}
+
+p {
+    width: 50em;
+    text-align: inherit;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+  }
+  a:hover{
+    letter-spacing: 3px;
+    transition: all 1s;
+  }
+.ecuacion {
+    width: 10em;
+}
+
+.imagenfg {
+    width: 50em;
+}
+
+.Ejemplo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/notebook-dark.png");
+}
+
+.Aplicaciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/notebook-dark.png");
+}
+
+.resultado {
+    width: 35em;
+}
+
+.plantilla {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
